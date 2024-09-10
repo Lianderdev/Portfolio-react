@@ -21,10 +21,6 @@ html {
 
 
 body {
-    width: 100%;
-    max-width: 1015px;
-    display: flex;
-    margin: 0 auto;
     padding: 0 15px;
     color: var(--zinc-50);
     background-color: var(--zinc-950);
@@ -32,6 +28,7 @@ body {
 
 main {
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -52,6 +49,12 @@ button {
 
 img {
     width: 100%;
+}
+
+section, footer {
+    width: 100%;
+    max-width: 1015px;
+    margin: 0 auto;
 }
 
 section h2 {

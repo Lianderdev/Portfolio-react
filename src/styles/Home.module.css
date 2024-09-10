@@ -127,19 +127,9 @@
     }
 }
 
-@media (max-width: 440px) {
-    .buttons {
-        flex-direction: column;
-    }
-
+@media (max-width: 460px) {
     .home h1 {
         font-size: 4rem;
         line-height: 4rem;
-    }
-}
-
-@media (max-width: 411px) {
-    .buttons {
-        flex-direction: column;
     }
 }

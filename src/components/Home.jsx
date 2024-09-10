@@ -7,11 +7,10 @@ import { LuHandMetal } from "react-icons/lu";
 
 export function Home() {
     return (
-
         <section className={styles.home}>
             <p className={styles.hello}>Hey guys <LuHandMetal className={styles.hand}/></p>
 
-            <h1>I'm Liander Vinícius<br/> Desenvolvedor Front-End</h1>
+            <h1>I'm Liander Vinícius<br/> Front-end Developer</h1>
 
             <p className={styles.apresentation}> // Passionate about creating intuitive and accessible interfaces, meeting user needs and company objectives.</p>
 
