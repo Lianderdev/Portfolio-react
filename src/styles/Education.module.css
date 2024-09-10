@@ -1,0 +1,74 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.educationContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+    gap: 10px;
+}
+
+.formation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--zinc-500);
+    border-radius: 10px;
+    position: relative;
+}
+
+.logoIfpa {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 4px;
+    object-fit: cover;
+}
+
+.logoIfpa img {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-left: 1px solid var(--zinc-500) ;
+    padding-left: 8px;
+}
+
+.information h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    text-transform: capitalize;
+}
+
+.information p {
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
+.information p:last-child {
+    color: var(--zinc-500);
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 550px) {
+    .educationContent {
+        grid-template-columns: 1fr;
+    }
+}

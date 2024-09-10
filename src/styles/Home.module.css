@@ -1,0 +1,145 @@
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 13rem 0 2rem 0;
+}
+
+.hello {
+    font-size: 1.5rem;
+    color: var(--zinc-500);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hand {
+    font-size: 2rem;
+}
+
+.hello small {
+    font-size: 2.5rem;
+}
+
+.home h1 {
+    margin-top: 1rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.apresentation {
+    max-width: 60rem;
+    font-size: 1.5rem;
+    padding-left: 2px;
+    margin-top: 1.5rem;
+    color: var(--zinc-500);
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 5px;
+}
+    
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+    animation: shadow-pulse 1.5s infinite; /* Animação de pulsar */
+}
+
+.data p {
+    font-size: 1.5rem;
+}
+
+.location {
+    font-size: 2rem;
+    margin-left: -5px;
+    font-weight: 700;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-left: 1px solid var(--zinc-500);
+    padding-left: 3rem;
+    margin-top: 10px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 16px;
+    background-color: transparent;
+    color: var(--zinc-50);
+    font-size: 1.5rem;
+}
+
+.curriculum {
+    color: var(--zinc-950);
+}
+
+.arrow {
+    color: var(--zinc-500);
+}
+
+.buttons button:last-child {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border: 1px solid var(--zinc-500);
+}
+
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0px 1px rgba(0, 255, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 0px 4px rgba(73, 180, 73, 0.478);
+    }
+    100% {
+        box-shadow: 0 0 0px 1px rgba(0, 255, 0, 0);
+    }
+}
+
+@media (max-width: 440px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .home h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (max-width: 411px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
