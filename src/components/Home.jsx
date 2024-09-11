@@ -16,6 +16,11 @@ export function Home() {
 
             <div className={styles.information}>
 
+                <div className={styles.buttons}>
+                    <button>Contact <LuCornerRightDown  className={styles.arrow}/></button>
+                    <button>Curriculo <GrDocumentText  className={styles.curriculum}/></button>
+                </div>
+
                 <div className={styles.datas}>
                     <div className={styles.data}>
                         <div className={styles.circle}></div>
@@ -26,13 +31,7 @@ export function Home() {
                         <CiLocationOn className={styles.location}/>
                         <p>Ananindeua - Pa</p>
                     </div>
-                </div>
-
-                <div className={styles.buttons}>
-                    <button>Contact <LuCornerRightDown  className={styles.arrow}/></button>
-                    <button>Curriculo <GrDocumentText  className={styles.curriculum}/></button>
-                </div>
-                
+                </div>     
             </div>
         </section>
     ) 

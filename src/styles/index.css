@@ -62,7 +62,7 @@ section h2 {
     font-weight: 400;
 }
 
-@media (max-width: 535px) {
+@media (max-width: 600px) {
     html {
         font-size: 50%;
     }  
