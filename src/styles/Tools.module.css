@@ -1,0 +1,31 @@
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: var(--zinc-800); 
+    margin-top: 1rem;
+}
+
+.tool img {
+    padding: 5px;
+    width: 3.5rem;
+    background-color: var( --zinc-900);
+    border-radius: 6px;
+}
+
+.imgTool {
+    width: 5rem;
+}

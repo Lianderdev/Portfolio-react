@@ -1,36 +1,29 @@
 import styles from '../styles/Education.module.css'
-
 import ifpa from '../images/ifpa logo.png'
 
+function Formation ({ img, alt, curso, nivel, instituicao, tempo }) {
+    return (
+        <div className={styles.formation}>
+            <div className={styles.logoIfpa}>
+                <img src={img} alt={alt} />
+            </div>
+            <div className={styles.information}>
+                <h3>{curso}</h3>
+                <p>{nivel}</p>
+                <p>{instituicao}</p>
+                <p>{tempo}</p>
+            </div>
+        </div>
+    )
+}
+
 export function Education() {
-    return(
+    return (
         <section className={styles.education}>
-            <h2>Formations</h2>
-
+            <h2>Formações</h2>
             <div className={styles.educationContent}>
-                <div className={styles.formation}>
-                    <div className={styles.logoIfpa}>
-                        <img src={ifpa} alt="logo do ifpa" />
-                    </div>
-                    <div className={styles.information}>
-                        <h3>computer science</h3>
-                        <p>higher education</p>
-                        <p>federal institute of Pará - IFPA</p>
-                        <p>2022 jan</p>
-                    </div>
-                </div>
-
-                <div className={styles.formation}>
-                    <div className={styles.logoIfpa}>
-                        <img src={ifpa} alt="logo do ifpa" />
-                    </div>
-                    <div className={styles.information}>
-                        <h3>computer technician</h3>
-                        <p>technical education</p>
-                        <p>federal institute of Pará - IFPA</p>
-                        <p>2019 jan - 2021 dec</p>
-                    </div>
-                </div>
+                <Formation img={ifpa} alt='logo do ifpa' curso='Computer Science' nivel='Higher Education' instituicao='Federal Institute of Pará' tempo='2022 jan' />
+                <Formation img={ifpa} alt='logo do ifpa' curso='Computer Techinician' nivel='techinical Education' instituicao='Federal Institute of Pará' tempo='2019 jan  - 2021 dec' />
             </div>
         </section>
     )

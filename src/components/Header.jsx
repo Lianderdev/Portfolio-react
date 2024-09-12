@@ -3,7 +3,7 @@ import logo from '../images/logo.png'
 
 import { FiGithub } from "react-icons/fi";
 import { PiLinkedinLogo } from "react-icons/pi";
-import { HiLanguage } from "react-icons/hi2";
+import { RiMenu4Fill } from "react-icons/ri";
 
 import { LuPanelLeftClose } from "react-icons/lu";
 
@@ -19,20 +19,19 @@ export function Header() {
                     <nav>
                         <ul>
                             <li><a href="">Home</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Education</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="">Ferramentas</a></li>
+                            <li><a href="">Projetos</a></li>
+                            <li><a href="">Formações</a></li>
+                            <li><a href="">Contatos</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div className={styles.headerRight}>
-                   <HiLanguage className={styles.language}/>
-
                     <div className={styles.links}>
-                        <FiGithub className={styles.github}/>
-                        <PiLinkedinLogo className={styles.linkedin}/>
-                        <button className={styles.menuMobile}> <LuPanelLeftClose /> </button>
+                        <a href="https://github.com/Lianderdev" target="_blank"><FiGithub className={styles.github}/></a>
+                        <a  href="https://www.linkedin.com/in/liander-vin%C3%ADcius/" target="_blank"><PiLinkedinLogo className={styles.linkedin}/></a>
+                        <button className={styles.menuMobile}> <RiMenu4Fill /> </button>
                     </div>
                 </div>
 
