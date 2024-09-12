@@ -48,8 +48,7 @@
 
 .datas {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
 .data {
@@ -75,13 +74,15 @@
 
 .location {
     font-size: 20px;
-    font-weight: 700;
+    color: red;
     margin-left: -3px;
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
     margin-left: 2px;
 }
@@ -89,9 +90,10 @@
 .buttons button {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
     gap: 1rem;
     border: 1px solid white;
-    padding: 0.7rem 8rem;
     border-radius: 25px;
     background-color: transparent;
     color: var(--zinc-50);
@@ -104,7 +106,7 @@
 }
 
 .arrow {
-    color: var(--zinc-500);
+    font-size: 2.5rem;
 }
 
 .buttons button:last-child {

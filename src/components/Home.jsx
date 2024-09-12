@@ -2,8 +2,9 @@ import styles from '../styles/Home.module.css'
 
 import { CiLocationOn } from "react-icons/ci";
 import { GrDocumentText } from "react-icons/gr";
-import { LuCornerRightDown } from "react-icons/lu";
+import { GoArrowUpRight } from "react-icons/go";
 import wallpaper from '../images/wallpaper.svg'
+import { AiTwotoneFileText } from "react-icons/ai";
 
 export function Home() {
     return (
@@ -28,8 +29,8 @@ export function Home() {
                 </div>  
 
                 <div className={styles.buttons}>
-                    <button>Fale comigo <LuCornerRightDown  className={styles.arrow}/></button>
-                    <button>Currículo <GrDocumentText  className={styles.curriculum}/></button>
+                    <button>Fale comigo <GoArrowUpRight  className={styles.arrow}/></button>
+                    <button>Currículo < AiTwotoneFileText  className={styles.curriculum}/></button>
                 </div>
    
             </div>

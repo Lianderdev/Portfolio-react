@@ -15,8 +15,8 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-weight: 400;
-    background-color: var(--zinc-800); 
     margin-top: 1rem;
+    border: 1px solid var(--zinc-500);
 }
 
 .tool img {
