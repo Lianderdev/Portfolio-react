@@ -1,15 +1,16 @@
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 1rem;
 }
 
 .tool {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 0.7rem;
+    gap: 1.5rem;
+    padding: 2rem 0.7rem;
     border-radius: 8px;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
@@ -17,12 +18,13 @@
     font-weight: 400;
     margin-top: 1rem;
     border: 1px solid var(--zinc-500);
+    background-color: var(--zinc-900);
 }
 
 .tool img {
     padding: 5px;
-    width: 3.5rem;
-    background-color: var( --zinc-900);
+    width: 4rem;
+    background-color: var( --zinc-800);
     border-radius: 6px;
 }
 

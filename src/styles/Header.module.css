@@ -10,8 +10,8 @@
     transform: translateX(-50%);
     padding: 2rem 15px;
     z-index: 200;
-    background-color: #09090b;
-    backdrop-filter: blur(8px);
+    background-color: #09090bd0;
+    backdrop-filter: blur(16px);
 }
 
 .logo {
