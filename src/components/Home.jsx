@@ -13,7 +13,7 @@ export function Home() {
 
             <h1>Eu sou Liander Vinícius<br/> Desenvolvedor Front-end</h1>
 
-            <p className={styles.apresentation}> // Apaixonado em criar interfaces intuitivas e acessíveis, atendendo às necessidades dos usuários e aos objetivos da empresa..</p>
+            <p className={styles.apresentation}> // Apaixonado em criar interfaces intuitivas e acessíveis, atendendo às necessidades dos usuários e aos objetivos da empresa.</p>
 
             <div className={styles.information}>
                 <div className={styles.datas}>

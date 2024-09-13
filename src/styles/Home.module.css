@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 20px;
     padding: 13rem 0 2rem 0;
     position: relative;
 }
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     margin-left: 2px;
 }
 
@@ -43,7 +43,7 @@
 .information {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .datas {
@@ -61,7 +61,7 @@
 .circle {
     width: 8px;
     height: 8px;
-    background-color: rgb(50, 162, 50);
+    background-color: rgb(82, 152, 82);
     border-radius: 50%;
     animation: shadow-pulse 1.5s infinite; /* Animação de pulsar */
     margin-left: 2.5px;
@@ -74,8 +74,7 @@
 
 .location {
     font-size: 20px;
-    color: red;
-    margin-left: -3px;
+    margin: -8px 0 -3px 0;
 }
 
 .buttons {
@@ -91,18 +90,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     gap: 1rem;
     border: 1px solid white;
     border-radius: 25px;
     background-color: transparent;
     color: var(--zinc-50);
     font-size: 1.7rem;
+    transition: .2s ease;
+}
+
+.buttons button:hover {
+    background-color: var(--zinc-50);
+    color: black;
+    font-weight: 500;
 }
 
 
 .curriculum {
     color: var(--zinc-950);
+    font-size: 2.5rem;
 }
 
 .arrow {
@@ -114,6 +121,10 @@
     color: rgb(0, 0, 0);
     font-weight: 500;
     border: 1px solid var(--zinc-500);
+}
+
+.buttons button:last-child:hover {
+    background-color: #c4c2c2;
 }
 
 .wallpaper {
@@ -147,7 +158,7 @@
 @media (max-width: 640px) {
     .home h1 {
         font-size: 3.5rem;
-        line-height: 3.5rem;
+        line-height: 3.9rem;
     }
 
     .buttons button {

@@ -66,7 +66,7 @@
 }
 
 .linkedin {
-    font-size: 3.5rem;
+    font-size: 30px;
     color: var(--gray-500);
     padding: 3px;
     border-radius: 6px;
@@ -74,7 +74,7 @@
 }
 
 .github {
-    font-size: 3.5rem;
+    font-size: 30px;
     color: var(--gray-500);
     padding: 5px;
     border-radius: 6px;
@@ -87,8 +87,8 @@
 }
 
 .menuMobile {
-    width: 3rem;
-    height: 3rem;
+    width: 30px;
+    height: 30px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -97,9 +97,19 @@
     color: var(--gray-50);
     background-color: var(--zinc-900);
     border-radius: 3px;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-bottom: 3px;
     position: relative;
+}
+
+.menuMobile::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: var(--zinc-700);
+    position: absolute;
+    left: -14px;
+    
 }
 
 @media (max-width: 782px) {
