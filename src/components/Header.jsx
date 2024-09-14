@@ -5,7 +5,6 @@ import { FiGithub } from "react-icons/fi";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { RiMenu4Fill } from "react-icons/ri";
 
-import { LuPanelLeftClose } from "react-icons/lu";
 
 export function Header() {
     return (

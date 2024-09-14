@@ -1,26 +1,26 @@
-import html from '../images/html.svg'
-import css from '../images/css.svg'
-import javascript from '../images/javascript.svg'
-import git from '../images/git.svg'
-import tailwind from '../images/tailwindcss.svg'
-import react from '../images/react.svg'
-
 import styles from '../styles/Tools.module.css'
 
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+
 const tools = [
-    {id: 1, img: html, name: 'Html'},
-    {id: 2, img: css, name: 'css'},
-    {id: 3, img: javascript, name: 'javascript'},
-    {id: 4, img: react, name: 'react'},
-    {id: 5, img: tailwind, name: 'tailwind'},
-    {id: 6, img: git, name: 'git'},
+    {id: 1, img: <FaHtml5 />, name: 'Html', color: '#E65100'},
+    {id: 2, img: <IoLogoCss3 />, name: 'css', color: '#0277BD'},
+    {id: 3, img: <FaJs />, name: 'javascript', color: '#FFD600'},
+    {id: 4, img: <FaReact />, name: 'react', color: '#6894CE'},
+    {id: 5, img: <RiTailwindCssFill />, name: 'tailwind', color: '#00ACC1'},
+    {id: 6, img: <FaGitAlt />, name: 'git', color: '#F4511E'},
 ]
 
 export function Tools() {
 
     const tool = tools.map(tool => 
     <li className={styles.tool} key={tool.id}>
-        <img src={tool.img} />
+        <div style={{backgroundColor: tool.color}}>{tool.img}</div>
         {tool.name}
     </li>)
 

@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css'
 import { CiLocationOn } from "react-icons/ci";
 import { GrDocumentText } from "react-icons/gr";
 import { GoArrowUpRight } from "react-icons/go";
-import wallpaper from '../images/wallpaper.svg'
 import { AiTwotoneFileText } from "react-icons/ai";
 
 export function Home() {
@@ -34,8 +33,6 @@ export function Home() {
                 </div>
    
             </div>
-
-            <img className={styles.wallpaper} src={wallpaper} alt="" />
         </section>
     ) 
 }

@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem 0.7rem;
+    padding: 2rem 0rem;
     border-radius: 8px;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
@@ -21,11 +21,13 @@
     background-color: var(--zinc-900);
 }
 
-.tool img {
-    padding: 5px;
-    width: 4rem;
-    background-color: var( --zinc-800);
+.tool div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     border-radius: 6px;
+    font-size: 3rem;
 }
 
 .imgTool {

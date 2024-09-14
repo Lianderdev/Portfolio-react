@@ -27,10 +27,16 @@
 }
 
 .home h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     line-height: 5.5rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
+    
+    font-family: geist, sans-serif;
+    word-spacing: -15px;
+}
+
+@font-face {
+    font-family: geist ;
+    src: url('../fonts/GeistMono-SemiBold.ttf')
 }
 
 .apresentation {
@@ -101,8 +107,8 @@
 }
 
 .buttons button:hover {
-    background-color: var(--zinc-50);
-    color: black;
+    background-color: var(--zinc-900);
+    border: 1px solid var(--zinc-900);
     font-weight: 500;
 }
 
@@ -155,10 +161,19 @@
     }
 }
 
+@media (max-width: 771px) {
+    .home h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+}
+
+
 @media (max-width: 640px) {
     .home h1 {
         font-size: 3.5rem;
         line-height: 3.9rem;
+        word-spacing: -5px;
     }
 
     .buttons button {

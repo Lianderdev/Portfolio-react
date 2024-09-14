@@ -41,23 +41,23 @@ export function Contact() {
         <section className={styles.formContent}>
             <h2>Contato</h2>
 
-            <p>Converse comigo </p>
+            <p>Me fale como eu posso te ajudar ? </p>
 
             <form onSubmit={sendEmail} className={styles.form}>
                 <div className={styles.datas}>
                     <div className={styles.data}>
-                        <label htmlFor="name" className={styles.label}>Nome: </label>
-                        <input type="text" value={name} onChange={getName} placeholder="liander" />
+                        <label htmlFor="name" className={styles.label}>Nome : </label>
+                        <input type="text" value={name} onChange={getName} placeholder="Liander" />
                     </div>
 
                     <div className={styles.data}>
-                        <label htmlFor="email" className={styles.label}>Email: </label>
+                        <label htmlFor="email" className={styles.label}>Email : </label>
                         <input type="text" value={email} onChange={getEmail} placeholder="liander@gmail.com" />
                     </div>
                 </div>
 
                 <div className={styles.data}>
-                    <label htmlFor="message">Menssagem</label>
+                    <label htmlFor="message">Menssagem : </label>
                     <textarea cols="30" rows="10" value={message} onChange={getMessage} placeholder="Digite sua menssagem"></textarea>
                 </div>
 
