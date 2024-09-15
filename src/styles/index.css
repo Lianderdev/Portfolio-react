@@ -16,12 +16,12 @@
     --zinc-700: #3f3f46;
     --zinc-500: #71717a;
     --zinc-50: #fafafa;
-    --sky-950: #dc2626;
     --gray-500: #6b7280;
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 

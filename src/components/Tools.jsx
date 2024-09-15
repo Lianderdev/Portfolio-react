@@ -25,7 +25,7 @@ export function Tools() {
     </li>)
 
     return (
-        <section>
+        <section id='tools'>
             <h2>Ferramentas</h2>
             <ul className={styles.tools}>{tool}</ul>
         </section>

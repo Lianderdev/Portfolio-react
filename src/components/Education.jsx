@@ -22,7 +22,7 @@ function Formation ({ img, alt, curso, nivel, instituicao, tempo }) {
 
 export function Education() {
     return (
-        <section className={styles.education}>
+        <section id='education' className={styles.education}>
             <h2>Formações</h2>
             <div className={styles.educationContent}>
                 <Formation img={ifpa} alt='logo do ifpa' curso='Computer Science' nivel='Higher Education' instituicao='Instituto Federal do Pará' tempo='2022 jan'/>

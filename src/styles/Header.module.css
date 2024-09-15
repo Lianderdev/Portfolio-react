@@ -109,11 +109,11 @@
     background-color: var(--zinc-700);
     position: absolute;
     left: -14px;
-    
 }
 
+
 @media (max-width: 782px) {
-    .navigation nav {
+    .navigation nav ul {
         display: none;
     }
 
@@ -122,8 +122,3 @@
     }
 }
 
-.language {
-    font-size: 2.3rem;
-    margin-top: -1px;
-    color: var(--gray-500);
-}

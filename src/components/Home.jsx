@@ -1,13 +1,12 @@
 import styles from '../styles/Home.module.css'
 
 import { CiLocationOn } from "react-icons/ci";
-import { GrDocumentText } from "react-icons/gr";
 import { GoArrowUpRight } from "react-icons/go";
 import { AiTwotoneFileText } from "react-icons/ai";
 
 export function Home() {
     return (
-        <section className={styles.home}>
+        <section id='home' className={styles.home}>
             <p className={styles.hello}>Olá galera <small className={styles.hand}>🤘🏻</small></p>
 
             <h1>Eu sou Liander Vinícius<br/> Desenvolvedor Front-end</h1>

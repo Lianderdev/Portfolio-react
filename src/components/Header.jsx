@@ -4,9 +4,11 @@ import logo from '../images/logo.png'
 import { FiGithub } from "react-icons/fi";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { RiMenu4Fill } from "react-icons/ri";
+import { useState } from 'react';
 
 
 export function Header() {
+
     return (
         <>
             <header className={styles.header}>
@@ -17,11 +19,11 @@ export function Header() {
 
                     <nav>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Ferramentas</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#tools">Ferramentas</a></li>
                             <li><a href="">Projetos</a></li>
-                            <li><a href="">Formações</a></li>
-                            <li><a href="">Contatos</a></li>
+                            <li><a href="#education">Formações</a></li>
+                            <li><a href="#contact">Contatos</a></li>
                         </ul>
                     </nav>
                 </div>
