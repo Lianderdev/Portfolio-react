@@ -1,7 +1,7 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import styles from '../styles/Contact.module.css'
-import { ModalSendSucces } from "../modals/Modals"
+import { ModalSendSucces, ModalSendFailed } from "../modals/Modals"
 
 export function Contact() {
 
@@ -9,7 +9,9 @@ export function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const [modal, setModal] = useState(true)
+    const [modal, setModal] = useState(false)
+    const [modalFailed, setModalFailed] = useState(false)
+
 
     const getName = (e) => { setName(() => e.target.value) }
     const getEmail = (e) => { setEmail(() => e.target.value) }
@@ -25,18 +27,20 @@ export function Contact() {
         }
 
         emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
-            .then((response) => {
+            .then(() => {
                 setName('')
                 setEmail('')
                 setMessage('')
-
                 setModal(true)
 
-            }).catch(e => console.log('error', e))
+            }).catch(e => {
+                setModalFailed(true)
+            })
     }
 
     const closeModal = () => {
         setModal(false)
+        setModalFailed(false)
      }
 
     const toSwitchOff = () => {
@@ -66,7 +70,7 @@ export function Contact() {
                 </div>
 
                 <div className={styles.data}>
-                    <label htmlFor="message">Menssagem : </label>
+                    <label htmlFor="message">Mensagem : </label>
                     <textarea cols="30" rows="10" value={message} onChange={getMessage} placeholder="Digite sua menssagem" required/>
                 </div>
 
@@ -77,6 +81,7 @@ export function Contact() {
             </form>
 
             {modal && <ModalSendSucces close={closeModal} />}
+            {modalFailed && <ModalSendFailed close={closeModal}/>}
 
         </section>
     )
