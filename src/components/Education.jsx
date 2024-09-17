@@ -25,8 +25,8 @@ export function Education() {
         <section id='education' className={styles.education}>
             <h2>Formações</h2>
             <div className={styles.educationContent}>
-                <Formation img={ifpa} alt='logo do ifpa' curso='Computer Science' nivel='Higher Education' instituicao='Instituto Federal do Pará' tempo='2022 jan'/>
-                <Formation img={ifpa} alt='logo do ifpa' curso='Computer Techinician' nivel='techinical Education' instituicao='Instituto Federal do Pará' tempo='2019 jan  - 2021 dec' />
+                <Formation img={ifpa} alt='logo do ifpa' curso='Ciência da Computação' nivel='Ensino Superior' instituicao='Instituto Federal do Pará' tempo='2022 jan'/>
+                <Formation img={ifpa} alt='logo do ifpa' curso='Técnico em Informática' nivel='Ensino Técnico' instituicao='Instituto Federal do Pará' tempo='2019 jan  - 2021 dec' />
             </div>
         </section>
     )

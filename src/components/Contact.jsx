@@ -1,6 +1,7 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import styles from '../styles/Contact.module.css'
+import { ModalSendSucces } from "../modals/Modals"
 
 export function Contact() {
 
@@ -8,7 +9,7 @@ export function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(true)
 
     const getName = (e) => { setName(() => e.target.value) }
     const getEmail = (e) => { setEmail(() => e.target.value) }
@@ -38,6 +39,12 @@ export function Contact() {
         setModal(false)
      }
 
+    const toSwitchOff = () => {
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
+
 
     return (
         <section id="contact" className={styles.formContent}>
@@ -64,20 +71,12 @@ export function Contact() {
                 </div>
 
                 <div className={styles.buttons}>
-                    <button>Cancelar</button>
+                    <button onClick={toSwitchOff}>Cancelar</button>
                     <button type="submit">Enviar</button>
                 </div>
             </form>
 
-            {modal && (
-                <div className={styles.modal}>
-                    <div className={styles.modal_content}>
-                        <h2>Mensagem enviada com sucesso!</h2>
-                        <p>Agradecemos por entrar em contato, logo responderemos sua mensagem.</p>
-                        <button onClick={closeModal}>Fechar</button>
-                    </div>
-                </div>
-            )}
+            {modal && <ModalSendSucces close={closeModal} />}
 
         </section>
     )
