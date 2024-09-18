@@ -39,11 +39,6 @@
     src: url('../fonts/GeistMono-SemiBold.ttf')
 }
 
-@font-face {
-    font-family: geistDois ;
-    src: url('../fonts/Geist-Light.ttf')
-}
-
 .apresentation {
     max-width: 60rem;
     font-size: 1.7rem;
@@ -197,6 +192,13 @@
 
     .buttons button {
         padding: 0.7rem 4rem;
+    }
+}
+
+@media (max-width: 444px) {
+    .home h1 {
+        font-size: 3.2rem;
+        line-height: 3.5rem;
     }
 }
 
