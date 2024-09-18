@@ -7,7 +7,7 @@ import { AiTwotoneFileText } from "react-icons/ai";
 export function Home() {
     return (
         <section id='home' className={styles.home}>
-            <p className={styles.hello}>Olá galera <small className={styles.hand}>🤘🏻</small></p>
+            <p className={styles.hello}>Olá galera <small className={styles.hand}>👋🏻</small></p>
 
             <h1>Eu sou Liander Vinícius<br/> Desenvolvedor Front-end</h1>
 

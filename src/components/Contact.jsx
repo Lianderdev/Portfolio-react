@@ -9,7 +9,7 @@ export function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const [modal, setModal] = useState(false)
+    const [modalSucess, setModalSucess] = useState(false)
     const [modalFailed, setModalFailed] = useState(false)
 
 
@@ -31,7 +31,7 @@ export function Contact() {
                 setName('')
                 setEmail('')
                 setMessage('')
-                setModal(true)
+                setModalSucess(true)
 
             }).catch(e => {
                 setModalFailed(true)
@@ -39,7 +39,7 @@ export function Contact() {
     }
 
     const closeModal = () => {
-        setModal(false)
+        setModalSucess(false)
         setModalFailed(false)
      }
 
@@ -60,18 +60,18 @@ export function Contact() {
                 <div className={styles.datas}>
                     <div className={styles.data}>
                         <label htmlFor="name" className={styles.label}>Nome : </label>
-                        <input type="text" value={name} onChange={getName} placeholder="Liander" required />
+                        <input type="text" value={name} id="name" onChange={getName} placeholder="Liander" required />
                     </div>
 
                     <div className={styles.data}>
                         <label htmlFor="email" className={styles.label}>Email : </label>
-                        <input type="text" value={email} onChange={getEmail} placeholder="liander@gmail.com" required />
+                        <input type="text" value={email} id="email" onChange={getEmail} placeholder="liander@gmail.com" required />
                     </div>
                 </div>
 
                 <div className={styles.data}>
                     <label htmlFor="message">Mensagem : </label>
-                    <textarea cols="30" rows="10" value={message} onChange={getMessage} placeholder="Digite sua menssagem" required/>
+                    <textarea cols="30" rows="10" value={message} id="message" onChange={getMessage} placeholder="Digite sua menssagem" required/>
                 </div>
 
                 <div className={styles.buttons}>
@@ -80,7 +80,7 @@ export function Contact() {
                 </div>
             </form>
 
-            {modal && <ModalSendSucces close={closeModal} />}
+            {modalSucess && <ModalSendSucces close={closeModal} />}
             {modalFailed && <ModalSendFailed close={closeModal}/>}
 
         </section>
