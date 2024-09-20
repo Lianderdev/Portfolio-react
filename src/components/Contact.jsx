@@ -1,7 +1,7 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import styles from '../styles/Contact.module.css'
-import { ModalSendSucces, ModalSendFailed } from "../modals/Modals"
+import { ModalSendSucces, ModalSendFailed, Modal } from "../modals/Modals"
 
 export function Contact() {
 
@@ -41,7 +41,7 @@ export function Contact() {
     const closeModal = () => {
         setModalSucess(false)
         setModalFailed(false)
-     }
+    }
 
     const toSwitchOff = () => {
         setName('')
@@ -71,7 +71,7 @@ export function Contact() {
 
                 <div className={styles.data}>
                     <label htmlFor="message">Mensagem : </label>
-                    <textarea cols="30" rows="10" value={message} id="message" onChange={getMessage} placeholder="Digite sua menssagem" required/>
+                    <textarea cols="30" rows="10" value={message} id="message" onChange={getMessage} placeholder="Digite sua menssagem" required />
                 </div>
 
                 <div className={styles.buttons}>
@@ -80,9 +80,10 @@ export function Contact() {
                 </div>
             </form>
 
-            {modalSucess && <ModalSendSucces close={closeModal} />}
-            {modalFailed && <ModalSendFailed close={closeModal}/>}
-
+            <Modal>
+                {modalSucess && <ModalSendSucces close={closeModal} />}
+                {modalFailed && <ModalSendFailed close={closeModal} />}
+            </Modal>
         </section>
     )
 }

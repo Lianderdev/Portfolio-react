@@ -22,19 +22,22 @@
 }
 
 .logoIfpa {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 4px solid var(--zinc-950);
+    box-shadow: 0 0 0 1px var(--zinc-500);
     border-radius: 50%;
     padding: 4px;
     object-fit: cover;
+    background-color: white;
 }
 
 .logoIfpa img {
-    width: 100%;
+    width: 2rem;
 }
 
 .information {

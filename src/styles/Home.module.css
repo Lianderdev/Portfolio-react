@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .home {
     display: flex;
     justify-content: center;
@@ -29,7 +31,7 @@
 .home h1 {
     font-size: 5.5rem;
     line-height: 5.5rem;
-    font-family: geistDois, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
 }

@@ -9,7 +9,7 @@ export function Home() {
         <section id='home' className={styles.home}>
             <p className={styles.hello}>Olá galera <small className={styles.hand}>👋🏻</small></p>
 
-            <h1>Eu sou Liander Vinícius<br/> Desenvolvedor Front-end</h1>
+            <h1>I'm Liander Vinícius<br/> Desenvolvedor Front-end</h1>
 
             <p className={styles.apresentation}> // Apaixonado em criar interfaces intuitivas e acessíveis, atendendo às necessidades dos usuários e aos objetivos da empresa.</p>
 

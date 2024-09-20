@@ -1,11 +1,15 @@
 import styles from '../styles/Modals.module.css'
-import { RiCloseLargeLine } from "react-icons/ri";
-import { FaTerminal } from "react-icons/fa6";
+
 import img_sucess from "../images/img_sucess.svg"
 import img_failed from "../images/img_failed.svg"
 
+import { RiCloseLargeLine } from "react-icons/ri";
 import { FcCheckmark } from "react-icons/fc";
 import { IoWarningOutline } from "react-icons/io5";
+
+export function Modal({children}) {
+    return <div>{children}</div>
+}
 
 
 export function ModalSendSucces({ close }) {

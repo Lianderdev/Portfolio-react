@@ -1,7 +1,7 @@
 import styles from '../styles/Education.module.css'
-import ifpa from '../images/ifpa logo.png'
+import ifpa from '../images/ifpa.png'
 
-import { MdBookmarks } from "react-icons/md";
+import { PiBookmarkSimple } from "react-icons/pi";
 
 function Formation ({ img, alt, curso, nivel, instituicao, tempo }) {
     return (
@@ -14,7 +14,7 @@ function Formation ({ img, alt, curso, nivel, instituicao, tempo }) {
                 <p>{nivel}</p>
                 <p>{instituicao}</p>
                 <p>{tempo}</p>
-                <MdBookmarks className={styles.selo}/>
+                <PiBookmarkSimple className={styles.selo}/>
             </div>
         </div>
     )
