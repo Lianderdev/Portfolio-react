@@ -1,7 +1,7 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
-import styles from '../styles/Contact.module.css'
-import { ModalSendSucces, ModalSendFailed, Modal } from "../modals/Modals"
+import styles from './Contact.module.css'
+import { ModalSendSucces, ModalSendFailed, Modal } from "../../modals/Modals"
 
 export function Contact() {
 
@@ -20,22 +20,24 @@ export function Contact() {
     function sendEmail(e) {
         e.preventDefault()
 
-        const templateParams = {
-            from_name: name,
-            message: message,
-            email: email
-        }
-
-        emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
-            .then(() => {
-                setName('')
-                setEmail('')
-                setMessage('')
-                setModalSucess(true)
-
-            }).catch(e => {
-                setModalFailed(true)
-            })
+        if (name.trim() !== '' && email.trim() !== '' && message.trim() !== '') {
+            const templateParams = {
+                from_name: name,
+                message: message,
+                email: email
+            }
+    
+            emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
+                .then(() => {
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    setModalSucess(true)
+    
+                }).catch(() => {
+                    setModalFailed(true)
+                })
+        } 
     }
 
     const closeModal = () => {

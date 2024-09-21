@@ -1,4 +1,4 @@
-import styles from '../styles/Modals.module.css'
+import styles from './Modals.module.css'
 
 import img_sucess from "../images/img_sucess.svg"
 import img_failed from "../images/img_failed.svg"

@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from './Home.module.css'
 
 import { CiLocationOn } from "react-icons/ci";
 import { GoArrowUpRight } from "react-icons/go";
@@ -27,7 +27,7 @@ export function Home() {
                 </div>  
 
                 <div className={styles.buttons}>
-                    <button>Fale comigo <GoArrowUpRight  className={styles.arrow}/></button>
+                    <a href='#contact'>Fale comigo <GoArrowUpRight  className={styles.arrow}/></a>
                     <button>Currículo < AiTwotoneFileText  className={styles.curriculum}/></button>
                 </div>
    

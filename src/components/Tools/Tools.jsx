@@ -1,4 +1,4 @@
-import styles from '../styles/Tools.module.css'
+import styles from './Tools.module.css'
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";

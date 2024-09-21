@@ -94,7 +94,7 @@
     margin-left: 2px;
 }
 
-.buttons button {
+.buttons a, .buttons button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,9 +106,10 @@
     color: var(--zinc-50);
     font-size: 1.7rem;
     transition: .2s ease;
+    cursor: pointer;
 }
 
-.buttons button:hover {
+.buttons a:hover {
     background-color: var(--zinc-900);
     border: 1px solid var(--zinc-900);
     font-weight: 500;
@@ -124,14 +125,14 @@
     font-size: 2.5rem;
 }
 
-.buttons button:last-child {
+.buttons button {
     background-color: white;
     color: rgb(0, 0, 0);
     font-weight: 500;
     border: 1px solid var(--zinc-500);
 }
 
-.buttons button:last-child:hover {
+.buttons button:hover {
     background-color: #c4c2c2;
 }
 

@@ -32,7 +32,7 @@
 }
 
 .data input {
-    border: 1px solid var(--zinc-500);
+    border: 2px solid var(--zinc-500);
     border-radius: 5px;
     padding: 0.7rem 2rem;
     font-size: 1.5rem;
@@ -46,8 +46,9 @@
 }
 
 .data input:focus {
-    outline: 2px solid var(--zinc-950);
-    box-shadow: 0 0 0 3px var(--zinc-50);}
+    outline: 3px solid var(--zinc-950);
+    box-shadow: 0 0 0 3px var(--zinc-50);
+}
 
 .data textarea {
     max-height: 150px;
@@ -62,7 +63,7 @@
 }
 
 .data textarea:focus {
-    outline: 2px solid var(--zinc-950);
+    outline: 3px solid var(--zinc-950);
     box-shadow: 0 0 0 3px var(--zinc-50);
 }
 

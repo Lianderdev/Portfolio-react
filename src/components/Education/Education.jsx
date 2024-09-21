@@ -1,5 +1,5 @@
-import styles from '../styles/Education.module.css'
-import ifpa from '../images/ifpa.png'
+import styles from './Education.module.css'
+import ifpa from '../../images/ifpa.png'
 
 import { PiBookmarkSimple } from "react-icons/pi";
 
