@@ -26,7 +26,7 @@ html {
 
 
 body {
-    padding: 0 15px;
+    padding: 0 1rem;
     color: var(--zinc-50);
     background-color: var(--zinc-950);
 }
@@ -58,7 +58,7 @@ img {
 
 section, footer {
     width: 100%;
-    max-width: 1015px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -69,6 +69,6 @@ section h2 {
 
 @media (max-width: 550px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }  
 }

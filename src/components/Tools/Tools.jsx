@@ -23,13 +23,15 @@ const tools = [
 export function Tools() {
 
     const tool = tools.map(tool => 
-    <li className={styles.tool} key={tool.id}>
-        <div style={{backgroundColor: tool.color}}>{tool.img}</div>
+    <li className="mt-4 flex flex-col items-center gap-3 font-normal pt-4 pb-3 rounded-lg text-[1.3rem] tracking-wider uppercase border-[1px] border-solid border-zinc-500 bg-zinc-900
+    md:gap-6 md:pt-5 md:pb-4 md:text-6 " key={tool.id}>
+        <div style={{backgroundColor: tool.color}} className='flex items-center justify-center p-2 rounded-md text-4xl
+        md:p-4 md:text-5xl '>{tool.img}</div>
         {tool.name}
     </li>)
 
     return (
-        <section id='tools'>
+        <section id='grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 '>
             <h2>Ferramentas</h2>
             <ul className={styles.tools}>{tool}</ul>
         </section>
