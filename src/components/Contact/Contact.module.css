@@ -47,7 +47,7 @@
 
 .data input:focus {
     outline: 3px solid var(--zinc-950);
-    box-shadow: 0 0 0 3px var(--zinc-50);
+    box-shadow: 0 0 0 4px var(--zinc-50);
 }
 
 .data textarea {
@@ -64,7 +64,7 @@
 
 .data textarea:focus {
     outline: 3px solid var(--zinc-950);
-    box-shadow: 0 0 0 3px var(--zinc-50);
+    box-shadow: 0 0 0 4px var(--zinc-50);
 }
 
 .buttons {

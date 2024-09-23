@@ -10,7 +10,7 @@ export function Header() {
 
     return (
         <>
-            <header className='bg-zinc-950 backdrop-blur-md w-full max-w-screen-lg py-8 px-4 lg-[1061px]:px-0 flex justify-between items-center fixed top-0 left-1/2 transform -translate-x-1/2 z-50'>
+            <header className='bg-zinc-950 backdrop-blur-md py-8 flex justify-between items-center fixed top-0 left-1/2 transform -translate-x-1/2 z-50'>
                 <div className='flex items-center gap-8'>
                     <div className='font-extrabold w-14 h-14 flex justify-between items-center rounded-lg border-2 border-white p-[2px]'>
                         <img src={logo} alt="logo do liander" />

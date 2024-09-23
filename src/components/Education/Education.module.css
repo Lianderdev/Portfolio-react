@@ -7,7 +7,7 @@
 .educationContent {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(393px, 1fr));
     gap: 10px;
 }
 
@@ -43,7 +43,7 @@
 .information {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     border-left: 1px solid var(--zinc-500) ;
     padding-left: 8px;
 }
@@ -56,7 +56,8 @@
 }
 
 .information p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     color: aliceblue;
     text-transform: capitalize;
 }
@@ -66,7 +67,7 @@
     position: absolute;
     right: 1.5rem;
     bottom: 1.5rem;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .selo {
@@ -80,5 +81,10 @@
 @media (max-width: 550px) {
     .educationContent {
         grid-template-columns: 1fr;
+    }
+
+    .information p:nth-child(4) {
+        font-size: 10px;
+        margin-bottom: -1px;
     }
 }
