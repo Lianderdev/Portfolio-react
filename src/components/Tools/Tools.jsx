@@ -31,9 +31,9 @@ export function Tools() {
     </li>)
 
     return (
-        <section id='grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 '>
-            <h2>Ferramentas</h2>
-            <ul className={styles.tools}>{tool}</ul>
+        <section id='tools'>
+            <h2 className='pb-4'>Ferramentas</h2>
+            <ul className='grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-x-4'>{tool}</ul>
         </section>
     )
 }

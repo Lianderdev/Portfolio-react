@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'headerColor': '#09090bd0'
+        'headerColor': '#09090bd0',
+        'modal': '#00000080'
       },
       screens: {
         'xs': '500px'

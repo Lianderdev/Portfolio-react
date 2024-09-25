@@ -12,7 +12,6 @@ export function Contact() {
     const [modalSucess, setModalSucess] = useState(false)
     const [modalFailed, setModalFailed] = useState(false)
 
-
     const getName = (e) => { setName(() => e.target.value) }
     const getEmail = (e) => { setEmail(() => e.target.value) }
     const getMessage = (e) => { setMessage(() => e.target.value) }
