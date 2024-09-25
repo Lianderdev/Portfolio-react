@@ -14,10 +14,10 @@ export function Modal({children}) {
 
 export function ModalSendSucces({ close }) {
     return (
-        <div className={styles.modal}>
-            <div className={styles.modal_content}>
-                <div className={styles.header}>
-                    <h3><FcCheckmark className={styles.terminal} />Mensagem enviada com Sucesso</h3>
+        <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center -z-50'>
+            <div className='w-full max-w-[500px] rounded-lg relative m-4'>
+                <div className='flex items-center justify-between px-8 py-4 border border-solid border-zinc-500'>
+                    <h3><FcCheckmark className='text-4xl text-zinc-500' />Mensagem enviada com Sucesso</h3>
                     <button onClick={close} className={styles.close}><RiCloseLargeLine /></button>
                 </div>
 
