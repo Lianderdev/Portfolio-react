@@ -1,5 +1,3 @@
-import styles from './Tools.module.css'
-
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
