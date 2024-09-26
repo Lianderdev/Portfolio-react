@@ -9,6 +9,10 @@
     -moz-osh-font-smoothing: grayscale;
 }
 
+.color {
+    background-color: #6894ceab;
+}
+
 :root {
     --zinc-950: #09090b;
     --zinc-900: #18181b;
@@ -58,7 +62,7 @@ section, footer, header {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 section {
@@ -68,7 +72,17 @@ section {
 section h2 {
     font-size: 20px;
     font-weight: 400;
+    font-family: 'MinhaFonte', sans-serif;
 }
+
+h1 {
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../assets/fonts/Geist-Regular.ttf');
+  }
 
 @media (max-width: 550px) {
     html {

@@ -19,7 +19,8 @@ export function Header() {
                     <nav>
                         <ul className='hidden gap-5 list-none md:flex'>
                             <li><a className='link' href="#home">Home</a></li>
-                             <li><a className='link' href="">Projetos</a></li>
+                            <li><a className='link' href="#tools">Ferramentas</a></li>
+                             <li><a className='link' href="#projects">Projetos</a></li>
                             <li><a className='link' href="#education">Formações</a></li>
                             <li><a className='link' href="#contact">Contatos</a></li>
                         </ul>
