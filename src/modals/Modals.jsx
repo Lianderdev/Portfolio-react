@@ -1,7 +1,5 @@
-import styles from './Modals.module.css'
-
-import img_sucess from "../images/img_sucess.svg"
-import img_failed from "../images/img_failed.svg"
+import img_sucess from "../assets/images/img_sucess.svg"
+import img_failed from "../assets/images/img_failed.svg"
 
 import { RiCloseLargeLine } from "react-icons/ri";
 import { FcCheckmark } from "react-icons/fc";

@@ -1,4 +1,4 @@
-import ifpa from '../../images/ifpa.png'
+import ifpa from '../assets/images/ifpa.png'
 
 import { PiBookmarkSimple } from "react-icons/pi";
 

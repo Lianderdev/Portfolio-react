@@ -1,5 +1,5 @@
-import styles from './Header.module.css'
-import logo from '../../images/logo.png'
+
+import logo from '../assets/images/logo.png'
 
 import { FiGithub } from "react-icons/fi";
 import { PiLinkedinLogo } from "react-icons/pi";
