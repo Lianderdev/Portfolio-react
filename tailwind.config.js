@@ -41,7 +41,7 @@ module.exports = {
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
+				input: '#71717a',
 				ring: 'hsl(var(--ring))',
 				chart: {
 					'1': 'hsl(var(--chart-1))',
@@ -52,7 +52,8 @@ module.exports = {
 				}
 			},
 			screens: {
-				xs: '500px'
+				'xs': '500px',
+				'lg': '1115px'
 			},
 			keyframes: {
 				'shadow-pulse': {

@@ -12,7 +12,7 @@
 }
 
 .button {
-    @apply flex items-center justify-center p-2 gap-4 border rounded-[25px] text-[1.8rem] transition duration-200 ease-in cursor-pointer;
+    @apply flex items-center justify-center gap-4 border rounded-[25px] text-[1.8rem] transition duration-200 ease-in cursor-pointer;
 }
 
 @layer base {

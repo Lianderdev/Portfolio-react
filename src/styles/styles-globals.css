@@ -71,7 +71,8 @@ section {
 
 section h2 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing: 1px;
     font-family: 'MinhaFonte', sans-serif;
 }
 

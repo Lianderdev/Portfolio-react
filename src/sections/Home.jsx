@@ -10,13 +10,13 @@ export function Home() {
         <section id='home' className="flex justify-center flex-col gap-12 pt-60 pb-8 relative ">
 
             <div className="w-24 object-cover -ml-[8px] -mb-[15px]">
-                <img src={avatar} alt="" />
+                <img className="object-fill w-full" src={avatar} alt="" />
             </div>
 
-            <h1 className='text-[3.7rem] leading-snug font-semibold 
-            xs:text-[4rem] xs:leading-none md:text-[5.5rem] md:leading-none'>I'm Liander Vinicius and <br/> I work as a front-end developer</h1>
+            <h1 className='text-[3.5rem] leading-snug font-semibold 
+            xs:text-[4rem] xs:leading-none md:text-[5.5rem] md:leading-none'>I'm liander vinicius and <br/> I work as a front-end developer</h1>
 
-            <p className="max-w-5xl text-2xl pl-[2px] text-zinc-500"> // Apaixonado em criar interfaces intuitivas e acessíveis, atendendo às necessidades dos usuários e aos objetivos da empresa.</p>
+            <p className="max-w-5xl text-2xl pl-[2px] text-zinc-300"> Apaixonado em criar interfaces intuitivas e acessíveis, atendendo às necessidades dos usuários e aos objetivos da empresa.</p>
 
             <div className="flex flex-col gap-[20px]">
                 <div className="flex gap-8">

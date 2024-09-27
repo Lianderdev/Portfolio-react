@@ -52,10 +52,10 @@ export function Contact() {
 
 
     return (
-        <section id="contact" className='flex flex-col gap-4'>
+        <section id="contact" className='flex flex-col'>
             <h2>Contato</h2>
 
-            <p className="text-2xl text-zinc-500">Me fale como eu posso te ajudar ? </p>
+            <p className="text-2xl text-zinc-300 mb-4">Me fale como eu posso te ajudar ? </p>
 
             <form onSubmit={sendEmail} className='flex flex-col gap-8 border border-zinc-500 bg-zinc-950 p-6 rounded-[10px]'>
                 <div className='grid  grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
