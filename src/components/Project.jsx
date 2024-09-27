@@ -4,15 +4,15 @@ export function Project({ title, description, link, img, tools }) {
     return (
         <Card className='border-zinc-500'>
             <CardContent className="flex flex-col p-6">
-                <h2 className="text-[1.5rem] capitalize">{title}</h2>
-                <p className="mt-[5px] text-[1.4rem] text-zinc-500">{description}</p>
+                <h2 className="text-[1.7rem] capitalize">{title}</h2>
+                <p className="text-[1.6rem] text-zinc-500">{description}</p>
 
-                <a className="w-full mt-8 rounded-xl" href={link}>
-                    <img className="object-fill w-full rounded-xl" src={img} alt={title} />
+                <a className="w-full mt-8 rounded-md" href={link}>
+                    <img href={link} className="object-fill rounded-md transform transition-transform duration-500 hover:scale-110" src={img} alt={title} />
                 </a>
-                <ul className="flex gap-2 mt-4">
+                <ul className="flex gap-2 flex-wrap mt-4">
                     {tools.map((tool) =>
-                        <li key={tool} className="px-4 py-2 border border-white rounded-full text-xl font-normal">{tool}</li>
+                        <li key={tool} style={{ userSelect: 'none' }} className="px-4 py-1 uppercase border bg-white rounded-md text-xl font-semibold text-zinc-950 hover:bg-zinc-200 transition-colors">{tool}</li>
                     )}
                 </ul>
             </CardContent>

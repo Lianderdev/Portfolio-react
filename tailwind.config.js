@@ -8,7 +8,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				headerColor: '#09090bd0',
+				tools: '#71717a83',
+				headerColor: '#71717a83',
 				modal: '#00000080',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',

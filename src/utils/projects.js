@@ -5,8 +5,8 @@ import todolist from '../assets/images/todolist.jpg'
 
 
 export const projects = [
-    {id:1, title:'Spyder Man 2', description:'lading page', link:'', img: spyder_man, tools: ['html', 'css', 'javascript']},
-    {id:2, title:'Burguer king', description:'lading page', link:'', img: burguer_king, tools: ['html', 'css', 'javascript']},
-    {id:3, title:'Figpro', description:'lading page', link:'', img: figpro, tools: ['html', 'css', 'javascript']},
-    {id:4, title:'To do list', description:'Site de tarefas', link:'', img: todolist, tools: ['html', 'css', 'javascript']},
+    {id:1, title:'Spyder Man 2', description:'lading page', link:'https://spyder-man-lading-page.vercel.app/', img: spyder_man, tools: ['html', 'css', 'javascript']},
+    {id:2, title:'Burguer king - Cupons', description:'lading page', link:'https://bk-cupons-lading-page.vercel.app/', img: burguer_king, tools: ['html', 'css', 'javascript']},
+    {id:3, title:'Figpro', description:'lading page', link:'https://lianderdev.github.io/FigPro-Lading-page/', img: figpro, tools: ['html', 'css', 'javascript']},
+    {id:4, title:'To do list', description:'Site de tarefas', link:'http://todolist-three-hazel.vercel.app/', img: todolist, tools: ['html', 'css', 'javascript']},
 ]

@@ -55,24 +55,24 @@ export function Contact() {
         <section id="contact" className='flex flex-col'>
             <h2>Contato</h2>
 
-            <p className="text-2xl text-zinc-300 mb-4">Me fale como eu posso te ajudar ? </p>
+            <p className="text-2xl text-zinc-300 mb-4 mt-2">Me fale como eu posso te ajudar ? </p>
 
             <form onSubmit={sendEmail} className='flex flex-col gap-8 border border-zinc-500 bg-zinc-950 p-6 rounded-[10px]'>
                 <div className='grid  grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
                     <div className='flex flex-col gap-4'>
-                        <label className='text-2xl' htmlFor="name">Nome : </label>
+                        <label className='text-2xl' htmlFor="name">Nome </label>
                         <input className="border border-zinc-500 rounded-[5px] p-4 text-2xl text-zinc-50 bg-zinc-950 font-medium
-                        focus:border-white" type="text" value={name} id="name" onChange={getName} placeholder="Liander" required />
+                        focus:border-white" type="text" value={name} id="name" onChange={getName} placeholder="Digite seu nome" required />
                     </div>
 
                     <div className='flex flex-col gap-4'>
-                        <label className='text-2xl' htmlFor="email">Email : </label>
-                        <input className="border border-zinc-500 rounded-[5px] p-4 text-2xl text-zinc-50 bg-zinc-950 font-medium focus:border-white" type="text" value={email} id="email" onChange={getEmail} placeholder="liander@gmail.com" required />
+                        <label className='text-2xl' htmlFor="email">Email </label>
+                        <input className="border border-zinc-500 rounded-[5px] p-4 text-2xl text-zinc-50 bg-zinc-950 font-medium focus:border-white" type="text" value={email} id="email" onChange={getEmail} placeholder="Digite seu email" required />
                     </div>
                 </div>
 
                 <div className='flex flex-col gap-4'>
-                    <label className="text-2xl" htmlFor="message">Mensagem : </label>
+                    <label className="text-2xl" htmlFor="message">Mensagem </label>
                     <textarea className="text-2xl max-h-60 max-w-full border border-zinc-500 rounded-[5px] p-4 bg-zinc-950 text-zinc-50 font-medium focus:border-white" cols="30" rows="10" value={message} id="message" onChange={getMessage} placeholder="Digite sua mensagem" required />
                 </div>
 

@@ -28,14 +28,12 @@ export function Header() {
                 </div>
 
                 <div className='flex items-center gap-6'>
-                    <div className="flex items-center gap-1 relative">
-                        <a href="https://github.com/Lianderdev" target="_blank"><FiGithub className="icons text-5xl"/></a>
+                    <div className="flex items-center gap-3 relative">
+                        <a  href="https://github.com/Lianderdev" target="_blank"><FiGithub className="icons text-5xl"/></a>
                         <a  href="https://www.linkedin.com/in/liander-vin%C3%ADcius/" target="_blank"><PiLinkedinLogo className="icons text-6xl"/></a>
-                        <button className="w-12 h-12 flex md:hidden items-center justify-center text-4xl text-gray-50 bg-zinc-900 rounded mb-[6px] ml-4 relative"> <RiMenu4Fill /> </button>
+                        <button className="w-12 h-12 flex md:hidden items-center justify-center text-4xl text-gray-50 bg-zinc-900 rounded  ml-4 relative"> <RiMenu4Fill /> </button>
                     </div>
                 </div>
-
-                
             </header>
         </>
     )

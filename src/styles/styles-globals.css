@@ -18,7 +18,7 @@
     --zinc-900: #18181b;
     --zinc-800: #27272a;
     --zinc-700: #3f3f46;
-    --zinc-500: #71717a;
+    --zinc-500: #71717a83;
     --zinc-50: #fafafa;
     --gray-500: #6b7280;
 }
@@ -70,10 +70,11 @@ section {
 }
 
 section h2 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: 'MinhaFonte', sans-serif;
+    scroll-margin: 5rem;
+    font-size: 2.25rem; /* Tamanho da fonte */
+    line-height: 2.5rem; 
+    font-weight: 500;
+    letter-spacing: -0.025em;
 }
 
 h1 {
