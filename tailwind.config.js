@@ -9,7 +9,7 @@ module.exports = {
 		extend: {
 			colors: {
 				tools: '#71717a83',
-				headerColor: '#71717a83',
+				headerColor: '#09090ba6',
 				modal: '#00000080',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
