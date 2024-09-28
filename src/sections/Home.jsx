@@ -9,7 +9,7 @@ import avatar from '../assets/images/avatar-liander.svg'
 
 export function Home() {
     return (
-        <section id='home' className="flex justify-center flex-col gap-12 pt-56 pb-8 relative">
+        <section id='home' className="flex justify-center flex-col gap-12 pt-52 pb-8 relative">
 
             {/* <div className="w-24 object-cover -ml-[8px] -mb-[15px]">
                 <img className="object-fill w-full" src={avatar} alt="" />
@@ -33,7 +33,7 @@ export function Home() {
                 </div>
 
                 <div className='w-full max-w-5xl grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 ml-0.5 mt-2'>
-                    <a className='button border-zinc-500' href='#contact'>
+                    <a className='button border' href='#contact'>
                         <Button className='button w-full bg-transparent hover:border-transparent' variant="secondary">Fale comigo <GoArrowUpRight className='text-4xl' /></Button>
                     </a>
                     <a href={curriculo} download={curriculo}>

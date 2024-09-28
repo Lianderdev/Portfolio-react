@@ -16,7 +16,7 @@ export function Projects() {
         <section id="projects" className="">
             <h2 className="mb-8">Projetos</h2>
 
-            <Carousel className="w-[87%] lg:w-full mx-auto">
+            <Carousel className="w-[87%] lg:w-full mx-auto overflow-visible">
                 <CarouselContent>
                     {projects.map((project) => (
                         <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">

@@ -4,11 +4,11 @@
 
 
 .link {
-    @apply text-2xl tracking-wide font-medium no-underline py-2 px-4 text-zinc-50 rounded-md hover:bg-zinc-800 transition-colors;
+    @apply text-2xl tracking-wide font-medium no-underline py-2 px-4 text-zinc-50 rounded-md hover:bg-zinc-800 duration-200 transition-colors;
 }
 
 .icons {
-    @apply  text-gray-500 h-14 w-14 p-2 rounded-md cursor-pointer hover:bg-zinc-800 transition-colors;
+    @apply  text-gray-500 h-14 w-14 p-2 rounded-md cursor-pointer hover:bg-zinc-800  transition-colors;
 }
 
 .button {

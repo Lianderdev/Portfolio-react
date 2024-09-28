@@ -5,24 +5,26 @@ import { RiCloseLargeLine } from "react-icons/ri";
 import { FcCheckmark } from "react-icons/fc";
 import { IoWarningOutline } from "react-icons/io5";
 
-export function Modal({children}) {
-    return <div>{children}</div>
-}
+import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
+import { RocketIcon } from "@radix-ui/react-icons"
+import { TbAlertTriangle } from "react-icons/tb";
+import { Button } from "@/components/ui/button";
+
 
 
 export function ModalSendSucces({ close }) {
     return (
         <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal'>
-            <div className='w-full max-w-[500px] rounded-xl relative m-4 bg-zinc-950'>
-                <div className='flex items-center justify-between px-8 py-4 border-b border-solid border-zinc-500'>
-                    <h3 className='flex items-center gap-4 text-2xl xs:text-3xl font-normal'><FcCheckmark className='text-4xl text-zinc-500' />Mensagem enviada com Sucesso</h3>
-                    <button className='flex p-1 text-4xl text-zinc-50 bg-transparent cursor-pointer rounded-md -mr-[10px]' onClick={close} ><RiCloseLargeLine /></button>
-                </div>
+            <div className='w-full max-w-[500px] rounded-xl relative mx-8 bg-zinc-950'>
+                <Alert className='relative h-auto flex flex-col gap-2 pl-11 py-6'>
+                    <RocketIcon className="h-8 w-8 mt-2 ml-1" />
+                    <AlertTitle>Mensagem enviada!</AlertTitle>
+                    <AlertDescription className='text-zinc-400'>
+                        Obrigado! Responderemos o mais rápido possível.
+                    </AlertDescription>
+                </Alert>
 
-                <div className='w-80 p-8 ml-auto mr-auto'>
-                    <img src={img_sucess} alt="imagem de sucesso ao enviar a mensagem" />
-                </div>
-                <p className='leading-10 p-8 xs:text-lg xs:leading-snug'>Obrigado por entrar em contato. responderemos o mais rápido possível!</p>
+                <Button onClick={close} variant="secondary" className='h-auto absolute top-4 right-4 p-2 py-2 text-2xl'><RiCloseLargeLine /></Button>
             </div>
         </div>
     )
@@ -31,15 +33,16 @@ export function ModalSendSucces({ close }) {
 export function ModalSendFailed({ close }) {
     return (
         <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal'>
-            <div className='w-full max-w-[500px] rounded-lg relative m-4 bg-zinc-950'>
-                <div className='flex items-center justify-between px-8 py-4 border-b border-solid border-zinc-500'>
-                    <h3 className='flex items-center gap-4 text-2xl xs:text-3xl font-normal'><IoWarningOutline color='#FBBB0B' className={styles.terminal} />Não foi possível enviar essa mensagem</h3>
-                    <button className='flex p-2 text-4xl text-zinc-50 bg-transparent cursor-pointer rounded-md -mr-[10px]' onClick={close} ><RiCloseLargeLine /></button>
-                </div>
-                <div className='w-80 p-8 ml-auto mr-auto'>
-                    <img src={img_failed} alt="imagem de falha ao enviar a mensagem" />
-                </div>
-                <p className='p-8 text-sm leading-7'>Verifique se o seu dispositivo está conectado a uma rede Wi-Fi estável ou a uma conexão de internet ativa para que possamos processar sua solicitação corretamente.</p>
+            <div className='w-full max-w-[500px] rounded-xl relative mx-8 bg-zinc-950'>
+                <Alert className='relative h-auto flex flex-col gap-2 pl-11 py-6'>
+                    <TbAlertTriangle className="h-8 w-8 mt-2 ml-1" />
+                    <AlertTitle>Erro ao enviar a mensagem enviada!</AlertTitle>
+                    <AlertDescription className='text-zinc-400'>
+                        Verifique se o seu dispositivo está conectado a uma rede Wi-Fi estável ou a uma conexão de internet.
+                    </AlertDescription>
+                </Alert>
+
+                <Button onClick={close} variant="secondary" className='h-auto absolute top-4 right-4 p-2 py-2 text-2xl'><RiCloseLargeLine /></Button>
             </div>
         </div>
     )

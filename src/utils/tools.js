@@ -6,6 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
+import { SiVite } from "react-icons/si";
 
 export const tools = [
     { 
@@ -46,9 +47,9 @@ export const tools = [
     },
     { 
         id: 7, 
-        Img: SiJest, 
-        name: 'Jest', 
-        color: '#9C4860' 
+        Img: SiVite, 
+        name: 'Vitejs', 
+        color: '#AD48FE' 
     },
     { 
         id: 8, 
