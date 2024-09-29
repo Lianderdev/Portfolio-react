@@ -4,7 +4,7 @@
 
 
 .link {
-    @apply text-2xl tracking-wide font-medium no-underline py-2 pl-2 pr-60 inline-block md:px-4 text-zinc-50 rounded-md hover:bg-zinc-800 duration-200 transition-colors;
+    @apply px-4 text-[15px] md:text-2xl tracking-wide font-light md:font-medium no-underline py-2 block md:px-4 text-zinc-50 rounded-md hover:bg-zinc-800 duration-200 transition-colors;
 }
 
 .icons {
