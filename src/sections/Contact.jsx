@@ -42,7 +42,7 @@ export function Contact() {
         <section id="contact" className='flex flex-col'>
             <h2>Contato</h2>
 
-            <p className="text-2xl text-zinc-300 mb-4 mt-2">Me fale como eu posso te ajudar ?</p>
+            <p className="text-2xl text-zinc-300 mb-8 mt-2">Me fale como eu posso te ajudar ?</p>
 
             <form onSubmit={sendEmail} className='flex flex-col gap-8 border bg-zinc-950 p-6 rounded-[10px]'>
                 <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
@@ -98,7 +98,10 @@ export function Contact() {
             {modalSucess && <ModalSendSucces close={closeModal} />}
             {modalFailed && <ModalSendFailed close={closeModal} />}
 
-            <p>Ou se preferr, contacte em alguma rede socal: <a href="">Lnkedn</a> <a href="">thub</a></p>
+            <p className="text-2xl text-zinc-400 mt-10">Ou, se preferir, entre em contato por meio destas redes sociais: 
+                <Button className='text-[14px] h-6' variant="link"><a href="https://www.linkedin.com/in/liander-vin%C3%ADcius/">Linkedin</a></Button> /
+                <Button className='text-[14px] h-6' variant="link"><a href="https://github.com/Lianderdev">Github</a></Button> 
+            </p>
         </section>
     );
 }
