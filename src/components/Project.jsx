@@ -12,7 +12,7 @@ export function Project({ title, link, img, tools }) {
                             </a>
                             <ul className="flex gap-2 flex-wrap mt-4">
                                 {tools.map((tool) =>
-                                    <li key={tool} style={{ userSelect: 'none' }} className="px-4 py-1 uppercase border bg-tranparent rounded-md text-xl font-medium text-zinc-50 hover:bg-zinc-600 duration-500 transition-colors">{tool}</li>
+                                    <li key={tool} style={{ userSelect: 'none' }} className="px-4 py-1 uppercase border bg-tranparent rounded-md text-xl font-medium text-zinc-50 hover:bg-zinc-900 duration-500 transition-colors">{tool}</li>
                                 )}
                             </ul>
             </CardContent>

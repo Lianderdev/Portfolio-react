@@ -38,20 +38,13 @@ export function Contact() {
         setModalFailed(false);
     }
 
-    function toSwitchOff() {
-        setName('');
-        setEmail('');
-        setMessage('');
-        closeModal();
-    }
-
     return (
         <section id="contact" className='flex flex-col'>
             <h2>Contato</h2>
 
             <p className="text-2xl text-zinc-300 mb-4 mt-2">Me fale como eu posso te ajudar ?</p>
 
-            <form onSubmit={sendEmail} className='flex flex-col gap-8 border border bg-zinc-950 p-6 rounded-[10px]'>
+            <form onSubmit={sendEmail} className='flex flex-col gap-8 border bg-zinc-950 p-6 rounded-[10px]'>
                 <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
                     <div className='flex flex-col gap-4'>
                         <label className='text-2xl' htmlFor="name">Nome</label>
@@ -97,14 +90,15 @@ export function Contact() {
                     />
                 </div>
 
-                <div className="w-full sm:pr-16 sm:pl-16 mr-auto ml-auto grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] items-center justify-center gap-12">
-                    <Button className='button' variant="secondary" onClick={toSwitchOff}>Cancelar</Button>
-                    <Button className='button' type="submit">Enviar</Button>
+                <div className="w-full flex items-center justify-center gap-12">
+                    <Button className='button w-full' type="submit">Enviar</Button>
                 </div>
             </form>
             
             {modalSucess && <ModalSendSucces close={closeModal} />}
             {modalFailed && <ModalSendFailed close={closeModal} />}
+
+            <p>Ou se preferr, contacte em alguma rede socal: <a href="">Lnkedn</a> <a href="">thub</a></p>
         </section>
     );
 }
