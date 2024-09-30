@@ -8,11 +8,14 @@ export function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const [loading, setLoading] = useState(false)
+
     const [modalSucess, setModalSucess] = useState(false);
     const [modalFailed, setModalFailed] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
+        setLoading(true)
 
         if (name.trim() !== '' && email.trim() !== '' && message.trim() !== '') {
             const templateParams = {
@@ -29,7 +32,9 @@ export function Contact() {
                     setModalSucess(true);
                 }).catch(() => {
                     setModalFailed(true);
-                });
+                }).finally(() => {
+                    setLoading(false)
+                })
         }
     }
 
@@ -91,7 +96,7 @@ export function Contact() {
                 </div>
 
                 <div className="w-full flex items-center justify-center gap-12">
-                    <Button className='button w-full' type="submit">Enviar</Button>
+                    <Button className='button w-full' type="submit">{loading ? 'Enviando...' : 'Enviar Mensagem'}</Button>
                 </div>
             </form>
             

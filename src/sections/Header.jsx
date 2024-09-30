@@ -29,7 +29,11 @@ export function Header() {
                             md:relative md:p-0 md:h-auto md:top-0 md:w-auto md:flex-row md:items-center md:left-0 md:border-none
                           `}>
 
-                            <h3 className='md:hidden text-xl font-normal text-zinc-400 mt-16 mb-2 border-t pt-4'>Seções</h3>
+                            <div className='md:hidden absolute font-extrabold w-14 h-14 flex justify-between items-center rounded-lg border-2 border-white p-[2px]'>
+                                <img src={logo} alt="logo do liander" />
+                            </div>
+
+                            <h3 className='md:hidden text-xl font-normal text-zinc-400 mt-20 mb-2 border-t pt-4'>Seções</h3>
                             <li><a onClick={handle} className='link' href="#home">Home</a></li>
                             <li><a onClick={handle} className='link' href="#tools">Tecnologias</a></li>
                             <li><a onClick={handle} className='link' href="#projects">Projetos</a></li>
