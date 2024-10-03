@@ -1,9 +1,4 @@
-import img_sucess from "../assets/images/img_sucess.svg"
-import img_failed from "../assets/images/img_failed.svg"
-
 import { RiCloseLargeLine } from "react-icons/ri";
-import { FcCheckmark } from "react-icons/fc";
-import { IoWarningOutline } from "react-icons/io5";
 
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
 import { RocketIcon } from "@radix-ui/react-icons"
