@@ -20,7 +20,7 @@ export function Projects() {
                     {projects.map((project) => (
                         <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
                             <div className="p-1">
-                                <Project link={project.link} title={project.title} description={project.description} img={project.img} tools={project.tools}/>
+                                <Project link={project.link} github={project.github} title={project.title} description={project.description} img={project.img} tools={project.tools}/>
                             </div>
                         </CarouselItem>
                     ))}
