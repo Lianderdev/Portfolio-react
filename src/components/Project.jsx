@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 export function Project({ title, link, img, tools, github }) {
     return (
         <Card >
-            <CardContent className="h-[320px] xs:h-[360px] sm:h-[410px] md:h-[330px] lg:h-[310px] flex flex-col p-6 relative overflow-hidden rounded-xl">
+            <CardContent className="h-[310px]  xs:h-[355px] sm:h-[410px] md:h-[330px] lg:h-[310px] flex flex-col p-6 relative overflow-hidden rounded-xl">
                 <a className="w-full rounded-lg overflow-hidden" href={link} target="_blank">
                     <img href={link} className=" object-fill transform transition-transform duration-500 hover:scale-110" src={img} alt={title} />
                 </a>
@@ -28,7 +28,7 @@ export function Project({ title, link, img, tools, github }) {
                     </li>
                     <li>
                         <a href={github} target="_blank">
-                            <Button variant='secondary' className='h-auto flex items-center text-white gap-3 px-4 font-light py-2 text-xl rounded-md'><IoIosGitCompare className="text-xl text-zinc-400"/>Código</Button>
+                            <Button variant='secondary' className='h-auto flex items-center text-white gap-3 px-4 font-medium font-light py-2 text-xl rounded-md'><IoIosGitCompare className="text-xl text-zinc-400"/>Código</Button>
                         </a>
                     </li>
                 </ul>
