@@ -15,7 +15,7 @@ export function Home() {
                 <img className="object-fill w-full" src={avatar} alt="" />
             </div> */}
 
-            <h1 className='scroll-m-20 text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:mt-6 font-extrabold tracking-tight'>I'm liander vinícius and Work as a front-end developer</h1>
+            <h1 className='scroll-m-20 text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:mt-6 font-extrabold tracking-tight'>I'm liander vinícius and Work as a front-end developer 👋🏻</h1>
 
             <p className="max-w-5xl text-[13px] pl-[2px] text-zinc-300 xs:text-3xl"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
 
@@ -27,7 +27,7 @@ export function Home() {
                     </div>
 
                     <div className="flex items-center gap-[0.6rem] px-1">
-                        <CiLocationOn className='text-4xl  mb-[6px]' />
+                        <CiLocationOn className='text-4xl mb-[6px] text-zinc-500' />
                         <p p className='text-[1.5rem]'>Ananindeua - Pa</p>
                     </div>
                 </div>

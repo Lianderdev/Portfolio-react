@@ -7,7 +7,7 @@ export function Tools() {
             <h2 className='pb-4'>Tecnologias e Ferramentas</h2>
             <ul className='grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-x-4'>
                 {tools.map(tool => (
-                <Tool key={tool.id} Img={tool.Img} name={tool.name} color={tool.color}/>
+                <Tool key={tool.id} Icons={tool.Icons} name={tool.name} color={tool.color} className="hover:p-2"/>
                 ))}
             </ul>
         </section>

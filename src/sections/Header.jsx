@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
 
+
 export function Header() {
     const [visible, setVisible] = useState(false);
     const [isMobile, setIsMobile] = useState(false); // Estado para verificar se é mobile
@@ -47,7 +48,7 @@ export function Header() {
                                 <img src={logo} alt="logo do liander" />
                             </div>
 
-                            <h3 className='md:hidden text-xl font-normal text-zinc-400 mt-20 mb-2 border-t pt-4'>Seções</h3>
+                            <h3 className='md:hidden text-2xl font-normal text-zinc-50 mt-20 mb-2 border-t pt-4'>Seções</h3>
 
                             <li><a onClick={handle} className='link' href="#home">Home</a></li>
                             <li><a onClick={handle} className='link' href="#tools">Tecnologias</a></li>
@@ -56,7 +57,7 @@ export function Header() {
                             <li><a onClick={handle} className='link' href="#contact">Contatos</a></li>
 
                             <div className='md:hidden flex flex-col gap-4'>
-                                <h3 className='md:hidden text-xl font-normal mt-6 text-zinc-400'>Redes Sociais</h3>
+                                <h3 className='md:hidden text-2xl font-normal mt-6 text-zinc-50'>Redes Sociais</h3>
                                 <ul className='-mt-2'>
                                     <li className='link'>
                                         <a target='_blank' className='flex justify-between items-center' href="https://github.com/Lianderdev">

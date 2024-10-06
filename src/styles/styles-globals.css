@@ -22,6 +22,8 @@
     --zinc-50: #fafafa;
     --gray-500: #6b7280;
     --glow-color: rgba(255, 0, 0, 1); /* Substitua pela cor desejada */
+    color: #e65100b2;
+    color: #ffd500ba;
 }
 
 html {
