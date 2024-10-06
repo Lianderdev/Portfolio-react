@@ -77,6 +77,9 @@ module.exports = {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			dropShadow: {
+				'glow': '0 0 0.8rem var(--glow-color)', // Classe personalizada para drop-shadow
+			  },
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
