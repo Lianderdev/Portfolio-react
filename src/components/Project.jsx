@@ -1,6 +1,5 @@
 import { Card, CardContent } from "../components/ui/card"
-import { TfiWorld } from "react-icons/tfi";
-import { IoIosGitCompare } from "react-icons/io";
+import { FiGithub } from "react-icons/fi";
 
 import { Button } from "./ui/button";
 
@@ -12,7 +11,12 @@ export function Project({ title, link, img, tools, github }) {
                     <img href={link} className=" object-fill transform transition-transform duration-500 hover:scale-110" src={img} alt={title} />
                 </a>
 
-                <h2 className="text-[1.7rem] capitalize mt-4">{title}</h2>
+                <div className="flex justify-between items-center mt-4">
+                    <h2 className="text-[1.7rem] capitalize ">{title}</h2>
+                    <a href={github} target="_blank">
+                        <Button variant='secondary' className='flex items-center gap-2 h-14 text-xl font-normal'><FiGithub /> Github </Button>
+                    </a>
+                </div>
 
 
                 {/* <ul className="flex gap-2 flex-wrap mt-2">
